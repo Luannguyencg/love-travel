@@ -1,0 +1,723 @@
+.main{
+    overflow: hidden;
+}
+
+.header{
+    
+}
+
+.header__nav-box{
+    height:var(--header-nav-height);
+    background-color:rgba(0,0,0,0.12);
+    position:relative;
+    z-index: 99;
+    padding:0 50px ;   
+    align-items: center;
+    justify-content: center;
+    
+}
+.header__logo{
+    display: block;
+    text-decoration: none;
+    padding:0  15px; 
+}
+.header__logo-img{
+    width:160px;
+    
+}
+
+
+
+.header__nav-list{
+    list-style: none;
+    display:inline-block;
+    padding:0 15px;
+    margin: 0;
+    line-height:1.6rem ;
+
+}
+
+.header__nav-item{
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.header__nav-item:last-child .header__nav-item-link{
+    margin-left: 25px;
+    background-color:#ba71da;
+    border-radius: 30px;
+}
+.header__nav-item-link{
+    display: block;
+    text-decoration: none;
+    color:var(--white-color);
+    font-size:1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding:12px 16px;
+}
+.header__nav-item:hover .header__nav-sub-list{
+    display:block;
+}
+
+.header__nav-sub-list{
+    position:absolute;
+    min-width:190px;
+    list-style: none;
+    padding-left:0;
+    top:100%;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+    display: none;
+    z-index: 999;
+
+}
+
+
+.header__nav-sub-item{
+    border-bottom: 1px solid #f3f3f3;
+}
+.header__nav-sub-link{
+    display: block;
+    text-decoration: none;
+    color:#9a9a9a;
+    font-size:1.4rem;
+    letter-spacing: 2px;
+    padding:12px 22px;
+}
+.header__nav-sub-link:hover{
+    background-color: #f9f9f9;
+}
+
+
+/*  */
+
+.header__nav-sub-link--hot{
+    display:flex;
+    align-items: center;
+}
+.header__nav-sub--character{
+    margin-left:auto;
+    border-radius: 4px;
+    color:var(--white-color);
+    padding:3px 5px;
+    font-size:1rem;
+    line-height:1rem;
+    letter-spacing: 2px;
+}
+
+.header__nav-menu{
+    margin-left: auto;
+    cursor: pointer;
+    
+}
+.header__nav-menu-checked{
+    display:none;
+}
+.header__nav-menu-checked:checked ~ .side-bar{
+    transform: translateX(-330px);
+}
+.header__nav-menu-box{
+    display: block;
+}
+
+.header__nav-menu-img{
+    width:25px;
+}
+
+/* SIDE BAR */
+
+.side-bar{
+    position: fixed;
+    width:330px;
+    height:100%;    
+    right:-330px;
+    top:0;
+    border-left: 1px solid #f1f1f1;
+    background-color: var(--white-color);
+    padding:20px 20px;
+    cursor: initial;
+    z-index: 999;
+    transition: transform linear 0.3s;
+    will-change: transform;
+
+}
+
+.side-bar__close{
+    position:absolute;
+    right:10px;
+    top:10px;
+    background-color:var(--white-color);
+    border-radius: 30px;
+}
+
+.sidebar-contain{
+    height:100%;
+    overflow-x: hidden  ;
+    overflow-y: auto;
+}
+.sidebar-contain::-webkit-scrollbar{
+    display: none;
+}
+.side-bar__close-img{
+    width: 25px;
+    cursor: pointer;
+}
+.side-bar__header{
+    
+}
+.side-bar__sub-heading{
+    font-size:1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:var(--text-sub-color);
+    text-align: center;
+    line-height: 2.7rem;
+    margin: 0 ;
+}
+.side-bar__heading{
+    font-size:2.5rem;
+    color:var(--text-color);
+    text-align: center;;
+    line-height:3rem;
+    margin: 0 0 25px 0;
+    
+}
+
+
+.side-bar__heading .under-line::after{
+    bottom: 5px;
+}
+
+
+
+
+.place__img-box{
+    flex:1;
+}
+.place__content-ifo{
+    padding:0;
+}
+.place__img{
+    width:100px;
+    height:100px;
+    
+}
+
+
+
+
+.destination__photo{
+   position: relative; 
+}
+.destination__photo:hover .destination__filter2{
+    display: flex;
+}
+
+.destination__photo-img{
+    width:100%;
+}
+
+/* filter 1 */
+.destination__filter1{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.1) 60%, rgba(101, 100, 96, 0.65) 100%);
+}
+
+.destination__icon{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:30px;
+}
+.destination__icon-img{
+    width:35px;
+}
+.destination__ifo{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    padding:30px;
+}
+.destination__ifo-name{
+    font-size:2rem;
+    color:var(--white-color);
+
+}
+.destination__ifo-qty{
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color:var(--white-color);
+}
+
+/* filter2 */
+.destination__filter2{
+    color: #14b9d5;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    padding:30px;
+    background-color:currentColor;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn ease 0.5s;
+    
+}
+
+.destination__filter2-heading{
+    font-size:2rem;
+    color:var(--white-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.destination__filter2-list{
+    list-style: none;
+    padding-left:0;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.destination__filter2-item{
+
+}
+.destination__filter2-link{
+    font-size:1.4rem;
+    color:var(--white-color);
+    text-decoration: none;
+    line-height: 2.6rem;
+}
+.destination__filter2-view-btn{
+    color:currentColor;
+    background-color: var(--white-color);
+}   
+
+
+
+.header-with-search{
+    background: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg') center /cover no-repeat ;
+    position: relative;
+    top:calc( 0px - var(--header-nav-height));
+    padding-top:270px;
+    padding-bottom:200px;
+}
+
+
+
+
+.header-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-search__wrap{
+    justify-content: center;
+}
+
+
+
+
+
+.header-search__text{
+    font-size:2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin:35px 0 65px 0;
+    color:var(--white-color);
+    text-align: center;
+}
+
+.header-search__input-box{
+    text-align: center;
+    width:370px;
+    position: relative;
+    display:flex;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    
+}
+.header-search__input{
+    color:#a3a3a3;
+    font-size:1.5rem;
+    padding:12px 26px;
+    border-radius: 30px;
+    width:100%;
+    border:none;
+    outline:none;
+
+}
+
+.header-search__search-btn{
+    width:48px;
+    background-color:var(--white-color);
+    border:none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+
+    
+}
+.header-search__search-icon{
+    color:#878787;
+    font-size:2rem;
+    line-height: 4.8rem;
+
+}
+
+.header-service__list{
+    padding-left:0;
+    justify-content:space-between;
+    width:600px;
+    margin-top:56px;
+}
+
+.header-service__item{
+    display: block;
+    text-align: center;
+    margin-top:12px;
+   
+    
+}
+
+.header-service__link{
+    display: inline-block;
+    text-decoration: none;
+    background:rgba(0,0,0,0.21);
+    margin:auto;
+    padding:20px;
+}
+
+.header-service__img{
+    width:40px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-service__text{
+    font-size:1.2rem;
+    color:var(--white-color);
+    margin: 14px auto 0 auto ;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    width:72px;
+    text-shadow: 0 0 4px #000;
+    
+  
+}
+
+
+
+/* content */
+
+.content{
+    margin-bottom: 80px;
+}
+
+
+.content__place-item{
+    margin-top:24px;
+}
+
+.content-holiday{
+    margin-top: 72px;
+    padding: 50px 0;
+    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538') center /cover no-repeat;
+}
+
+.content-holiday__box{
+    justify-content: center;
+    align-items: center;
+}
+.content-holiday__first-heading{
+    font-size: 4.5rem;
+    color:var(--white-color);
+    margin:0;
+}
+
+
+
+
+.content-container{
+    padding:50px 12px;
+}
+.content-beach__box{
+    justify-content: space-between;
+}
+
+.content-beach__price{
+    font-size:3rem;
+    color:var(--text-color);
+    font-weight: normal;
+}
+.content-beach__price-initial{
+    color:#dadada;
+    text-decoration: line-through;
+}
+.content-beach__price-for{
+    font-size:1.4rem;
+
+}
+.content-beach__btn{
+    color:var(--white-color);
+    background-color:var(--green-color);
+    
+}
+.content-beach__box-img{
+    position:relative;
+    height:410px;
+    display: flex;
+    justify-content: center;
+    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-4.jpg') center center /cover no-repeat;
+}
+
+.content-beach__calendar{
+    position:absolute;
+    z-index: 1;
+    top:100%;
+    transform:translateY(-50%);
+    background:var(--blu-color);
+    width:80%;
+    list-style:none;
+    padding-left:0;
+    margin:0;
+    color:var(--white-color);
+    
+    
+}
+.content-beach__calendar-time{
+    position:relative;
+    padding:0;
+    margin:30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-beach__calendar-time::after{
+    position:absolute;
+    content:"/";
+    right:0;
+    font-size: 40px;
+    color: #000;
+    opacity: 0.05;
+    font-weight: 100;
+    z-index: 99;
+    line-height: 60px;
+
+}
+.content-beach__calendar-time:last-child::after{
+    display:none;
+}
+.content-beach__calendar-time-number{
+    font-size:3.5rem;
+    line-height:3.5rem;
+    font-weight: normal;
+    margin:0 0 8px 0;
+    text-align: center;
+
+}
+.content-beach__calendar-time-text{
+    margin:0;
+    font-size:1.3rem;
+    line-height:1.3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
+
+.tour-section__content{
+    padding-left:70px;
+    position:relative;
+}
+
+.tour-section__img-icon{
+    width:50px;
+    position:absolute;
+    top: 0;
+    left:0;
+}
+.tour-section__heading{
+    font-size:2.4rem;
+    color:var(--text-color);
+}
+.tour-section__btn{
+    text-decoration: none;
+    color:var(--blu-color);
+    font-size:1.4rem;
+    line-height:3rem;
+
+}
+.content-discover{
+    margin-bottom: 60px;
+}
+.content-discover__item{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px ;   
+}
+.content-discover__item--city{
+    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584') center /cover no-repeat ;
+}
+.content-discover__item--nature{
+    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585') center /cover no-repeat ;
+}
+.content-discover__heading{
+    font-size: 3.6rem;
+}
+
+.content-discover__btn{
+    margin-top: 30px;
+}
+
+.content-package__item{
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+.package-photo{
+    position: relative;
+    width: 100%;
+}
+.package-photo__img{
+    width: 100%;
+    max-height: 230px;
+}
+.package-photo__icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right:20px;
+    top: 100%;
+    transform: translateY(-50%);
+    
+}
+.package-photo__icon-img{
+    width: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.package-info{
+    padding: 30px;
+}
+.package-info .place-name{
+    font-weight: 600;
+}
+.package-info .place-location{
+    padding-bottom: 40px;
+    margin:0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.package-price{
+    padding: 15px 0; 
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+.package-price__cultural{
+    font-weight:normal;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0;
+    letter-spacing: 1px
+
+}
+.package-price__cultural--sport{
+    color: var(--white-color);
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-left:5px; 
+}
+
+.footer{
+    background: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602') center /cover no-repeat;
+    padding-bottom: 80px;
+}
+
+.footer-communication{
+    height: 200px;
+    justify-content:center;
+    align-items:center;
+}
+.footer__input-communication{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #f1f1f1;
+    -webkit-appearance: none;
+    font-size: 1.5rem;
+
+}
+.footer__input-btn{
+    background-color: var(--blu-color);
+    margin-left: 5px;
+}
+
+.footer__info{
+    padding: 35px 30px;
+    background-color: #fff;
+}
+.footer__info-box{
+    padding: 0 25px 0;
+}
+.footer__info-heading{
+    width: 100%;
+}
+.footer__info-heading-logo{
+    width: 150px;
+}
+.footer__info-social-list{
+    list-style: none;
+    display: flex;
+    padding: 0
+}
+.footer__info-social-item{
+    font-size: 2.2rem;
+    margin-right: 16px
+}
+.social-item-link{
+    color: var(--text-color)
+}
+.footer-option__heading{
+    font-size: 1.4rem;
+    margin: 0;
+}
+.footer-option__list{
+    list-style: none;
+    padding: 0;
+}
+.footer-option__item .content-text{
+    margin: 0;
+}
+.footer__bottom{
+    background-color: var(--blu-color);
+    
+}
+.footer__bottom-box{
+    padding: 20px;
+}
+.footer-text{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+

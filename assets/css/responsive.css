@@ -1,0 +1,76 @@
+/* mobile and tablet */
+@media (min-width:1024px) and (max-width:1239px){
+    .wide .l-3 {
+        display: flex;
+    }
+}
+@media (max-width:1023px){
+    :root{
+        --header-nav-height:60px;
+    }
+    .hide-on-tablet-mobile{
+        display:none;
+    }
+    
+
+    .header-service__list{
+        width: 100%;
+    }
+    .header-service__item{
+        width:100%;       
+    }
+    .header-service__link{
+        display:block;
+    }
+    .header-search__input-box{
+        width:100%;
+        margin:0 16px;
+    }
+
+    
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display:none;
+    }
+}
+
+/* mobile*/
+@media (max-width:739px){
+    .padding-top-on-mobile{
+        padding-top:20px;
+    }
+
+    .hide-on-mobile{
+        display:none;
+    }
+    .content-mobile{
+        margin:0 12px;
+    }
+    .header__nav-menu{
+        /* margin-left:unset; */
+    }
+    .content-holiday__first-heading{
+        text-align: center;
+    }
+    .content-holiday__heading{
+        margin-bottom:42px ;
+        text-align: center;
+    }
+
+    
+    .content-beach__calendar{
+        width:100%;   
+    }
+    .header-search__heading{
+        text-align: center;
+    }
+    .tour-section{
+        padding-top:220px;
+    }
+    .content-beach__calendar-time::after{
+        display:none;
+    }
+}
