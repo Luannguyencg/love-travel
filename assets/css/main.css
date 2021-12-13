@@ -305,7 +305,7 @@
 
 
 .header-with-search{
-    background: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg') center /cover no-repeat ;
+    background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg") center /cover no-repeat ;
     position: relative;
     top:calc( 0px - var(--header-nav-height));
     padding-top:270px;
@@ -433,7 +433,7 @@
 .content-holiday{
     margin-top: 72px;
     padding: 50px 0;
-    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538') center /cover no-repeat;
+    background:url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538") center /cover no-repeat;
 }
 
 .content-holiday__box{
@@ -479,7 +479,7 @@
     height:410px;
     display: flex;
     justify-content: center;
-    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-4.jpg') center center /cover no-repeat;
+    background:url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-4.jpg") center center /cover no-repeat;
 }
 
 .content-beach__calendar{
@@ -571,10 +571,10 @@
     padding: 50px 15px ;   
 }
 .content-discover__item--city{
-    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584') center /cover no-repeat ;
+    background:url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584") center /cover no-repeat ;
 }
 .content-discover__item--nature{
-    background:url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585') center /cover no-repeat ;
+    background:url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585") center /cover no-repeat ;
 }
 .content-discover__heading{
     font-size: 3.6rem;
@@ -647,7 +647,7 @@
 }
 
 .footer{
-    background: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602') center /cover no-repeat;
+    background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602') center /cover no-repeat";
     padding-bottom: 80px;
 }
 
